@@ -1,6 +1,6 @@
-Master Assignment
+# Master Assignment
 
-by Nicolai Vatne
+### by Nicolai Vatne
 
 
 Kubernetes Dashboard
