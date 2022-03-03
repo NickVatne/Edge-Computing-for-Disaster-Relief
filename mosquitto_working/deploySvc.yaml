@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mosquitto
+spec:
+  selector:
+    matchLabels:
+      app: mosquitto
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: mosquitto
+    spec:
+      containers:
+      - name: mosquitto
+        image: eclipse-mosquitto:1.6.10
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 1883
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: mosquitto-service
+spec:
+  type: LoadBalancer
+  ports:
+    - name: mqtt-1883
+      port: 1883
+      targetPort: 1883
+    - name: mqtt-9001
+      port: 9001
+      targetPort: 9001
+      protocol: TCP
+  selector:
+    app: mosquitto
