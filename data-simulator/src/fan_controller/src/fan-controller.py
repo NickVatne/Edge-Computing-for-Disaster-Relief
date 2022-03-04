@@ -32,4 +32,4 @@ while True:
     print(payload)
     client.connect(broker, port)
     client.publish(topic, payload)
-    time.sleep(10)
+    time.sleep(60)
