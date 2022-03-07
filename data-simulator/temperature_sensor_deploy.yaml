@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: fan-1
+  name: temp-1
   namespace: sensors
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: fan-1
+      app: temp-1
   template:
     metadata:
       labels:
-        app: fan-1
+        app: temp-1
     spec:
       containers:
-      - name: fan-1
-        image: nkv21/fan-controller
+      - name: temp-1
+        image: nkv21/temp-app
         imagePullPolicy: Always
