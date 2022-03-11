@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: temp-1
+  name: beq-1
   namespace: sensors
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: temp-1
+      app: beq-1
   template:
     metadata:
       labels:
-        app: temp-1
+        app: beq-1
     spec:
       containers:
-      - name: temp-1
-        image: nkv21/temp-controller
+      - name: beq-1
+        image: nkv21/beq-controller
         imagePullPolicy: Always

@@ -1,7 +1,8 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mosquitto
+  name: mosquitto-deployment-open
+  namespace: mosquitto
 spec:
   selector:
     matchLabels:
@@ -23,7 +24,8 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: mosquitto-service
+  name: mosquitto-service-open
+  namespace: mosquitto
 spec:
   type: LoadBalancer
   ports:

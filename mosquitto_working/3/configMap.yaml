@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mosquitto-conf
+  namespace: mosquitto-verified
+data:
+  mosquitto.conf : |-
+    log_dest stdout
+    listener 8883
+    port 1883
+    allow_anonymous false
+    tls_version tlsv1.2
+    cafile /mosquitto/config/certs/ca.crt
+    certfile /mosquitto/config/certs/server.crt
+    keyfile /mosquitto/config/certs/server.key
