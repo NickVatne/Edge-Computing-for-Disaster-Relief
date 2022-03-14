@@ -4,23 +4,33 @@ import datetime
 import json
 import uuid
 import ssl
-import paho.mqtt.client as mqtt
+from paho.mqtt import client as mqtt_client
 
 broker = "192.168.0.230"
 port = 8883
+topic = "home/fans/"
+unique_id = uuid.uuid4()
+deviceID = "Fan-Controller-RPI" + unique_id.__str__()
 
 
-def fan_controller(broker, port):
-    unique_id = uuid.uuid4()
-    topic = "home/fan/"
-    fault = "test"
-    deviceID = "Fan-Controller-RPI" + unique_id.__str__()
-    client = mqtt.Client(deviceID)
+def connect():
+    def on_connect(client, userdata, flags, rc):
+        if rc == 0:
+            print("Connected to HADR Network")
+        else:
+            print("Failed to connect to HADR Network, Returned", rc)
+    client = mqtt_client.Client(deviceID)
     client.tls_set(
-        "/home/nicolaivatne/Developer/master-assignment-nicolai/mosquitto_working/no-certs-implementation-copy/certs/ca.crt",
-        tls_version=ssl.PROTOCOL_TLSv1_2)
+            "/home/nicolaivatne/Developer/master-assignment-nicolai/mosquitto/mosquitto-tls-enabled/certs/ca.crt",
+            tls_version=ssl.PROTOCOL_TLSv1_2)
     client.tls_insecure_set(True)
+    client.on_connect = on_connect
+    client.connect(broker, port)
+    return client
 
+def publish(client):
+    msg_count = 0
+    fault = random.randint(1, 2)
     while True:
         data = {}
         data["deviceID"] = deviceID
@@ -37,10 +47,20 @@ def fan_controller(broker, port):
 
         payload = json.dumps(data, ensure_ascii=False)
         print(payload)
-        client.connect(broker, port)
-        client.publish(topic, payload)
-        time.sleep(60)
+        result = client.publish(topic, payload)
+        status = result[0]
+        if status == 0:
+            print("Message sent")
+        else:
+            print("Failed to send message to topic {topic}")
+        msg_count += 1
+        time.sleep(30)
+
+def run():
+    client = connect()
+    client.loop_start()
+    publish(client)
 
 
 if __name__ == '__main__':
-    fan_controller(broker, port)
+    run()
