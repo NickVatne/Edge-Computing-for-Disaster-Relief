@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata: 
+  name: mosquitto-config
+  namespace: mosquitto
+data:
+  mosquitto.conf:  |-
+    log_dest stdout
+    protocol mqtt
+    tls_version tlsv1.2
+    listener 8883
+    allow_anonymous true
+    cafile /mosquitto/tls-ca/ca.crt
+    certfile /mosquitto/tls-server/tls.crt
+    keyfile /mosquitto/tls-server/tls.key

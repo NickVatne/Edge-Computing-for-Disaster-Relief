@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mosquitto-service-open
+  namespace: mosquitto
+spec:
+  type: LoadBalancer
+  ports:
+    - name: mqtt-1883
+      port: 1883
+      targetPort: 1883
+    - name: mqtt-9001
+      port: 9001
+      targetPort: 9001
+      protocol: TCP
+    - name: mqtt-8883
+      port: 8883
+      targetPort: 8883
+      protocol: TCP 
+  selector:
+    app: mosquitto

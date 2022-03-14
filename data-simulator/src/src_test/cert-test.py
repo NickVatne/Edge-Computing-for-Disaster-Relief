@@ -14,7 +14,7 @@ def on_log(client, userdata, level, buf):
 
 def on_connect(client, userdata, flags, rc):
     print("publishing ")
-    client.publish("muthu", "muthupavithran", )
+    client.publish("test/topic", "python", )
     print(rc)
 
 
@@ -23,10 +23,10 @@ client.on_message = on_message
 client.on_log = on_log
 client.on_connect = on_connect
 print("connecting to broker")
-client.tls_set("/Users/nicolaivatne/Developer/University of Oslo/Master_Assignment/mosquitto_working/certs/certs-nw/ca.crt",
+client.tls_set("/home/nicolaivatne/Developer/master-assignment-nicolai/mosquitto_working/no-certs-implementation-copy/certs/ca.crt",
                tls_version=ssl.PROTOCOL_TLSv1_2)
-client.tls_insecure_set(False)
-client.connect("192.168.0.241", 8883, 60)
+client.tls_insecure_set(True)
+client.connect("192.168.0.230", 8883, 60)
 
 ##start loop to process received messages
 client.loop_start()

@@ -1,0 +1,47 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mosquitto-deployment-open
+  namespace: mosquitto
+spec:
+  selector:
+    matchLabels:
+      app: mosquitto
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: mosquitto
+    spec:
+      containers:
+      - name: mosquitto
+        image: eclipse-mosquitto:1.6.15
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 1883
+        volumeMounts:
+          - name: mosquitto-config 
+            mountPath: /mosquitto/config/mosquitto.conf
+            subPath: mosquitto.conf
+          - name: tls-ca
+            mountPath: /mosquitto/tls-ca
+            readOnly: true
+          - name: tls-server
+            mountPath: /mosquitto/tls-server
+            readOnly: true
+      volumes:
+        - name: mosquitto-config
+          configMap:
+            name: mosquitto-config
+        - name: tls-ca
+          secret:
+            secretName: mqtt-ca
+        - name: tls-server
+          secret:
+            secretName: mqtt-tls
+        - name: mosquitto-data
+          persistentVolumeClaim:
+            claimName: mosquitto
+            emptyDir:
+      
+

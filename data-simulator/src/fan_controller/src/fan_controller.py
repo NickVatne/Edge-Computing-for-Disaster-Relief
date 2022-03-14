@@ -3,10 +3,11 @@ import random
 import datetime
 import json
 import uuid
+import ssl
 import paho.mqtt.client as mqtt
 
-broker = "192.168.0.241"
-port = 1883
+broker = "192.168.0.230"
+port = 8883
 
 
 def fan_controller(broker, port):
@@ -15,6 +16,10 @@ def fan_controller(broker, port):
     fault = "test"
     deviceID = "Fan-Controller-RPI" + unique_id.__str__()
     client = mqtt.Client(deviceID)
+    client.tls_set(
+        "/home/nicolaivatne/Developer/master-assignment-nicolai/mosquitto_working/no-certs-implementation-copy/certs/ca.crt",
+        tls_version=ssl.PROTOCOL_TLSv1_2)
+    client.tls_insecure_set(True)
 
     while True:
         data = {}
