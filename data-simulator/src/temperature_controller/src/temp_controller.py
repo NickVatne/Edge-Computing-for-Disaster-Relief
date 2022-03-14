@@ -20,7 +20,7 @@ def connect():
             print("Failed to connect to HADR Network, Returned", rc)
     client = mqtt_client.Client(deviceID)
     client.tls_set(
-            "/home/nicolaivatne/Developer/master-assignment-nicolai/mosquitto/mosquitto-tls-enabled/certs/ca.crt",
+            "ca.crt",
             tls_version=ssl.PROTOCOL_TLSv1_2)
     client.tls_insecure_set(True)
     client.on_connect = on_connect

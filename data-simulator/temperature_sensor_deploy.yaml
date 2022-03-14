@@ -13,6 +13,8 @@ spec:
       labels:
         app: temp-1
     spec:
+      imagePullSecrets:
+      - name: mqtt-ca
       containers:
       - name: temp-1
         image: nkv21/temp-controller

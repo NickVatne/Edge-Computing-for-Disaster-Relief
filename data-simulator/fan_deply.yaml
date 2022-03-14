@@ -13,6 +13,8 @@ spec:
       labels:
         app: fan-1
     spec:
+      imagePullSecrets:
+      - name: mqtt-ca
       containers:
       - name: fan-1
         image: nkv21/fan-controller

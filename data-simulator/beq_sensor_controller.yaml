@@ -13,6 +13,8 @@ spec:
       labels:
         app: beq-1
     spec:
+      imagePullSecrets:
+      - name: mqtt-ca
       containers:
       - name: beq-1
         image: nkv21/beq-controller
