@@ -7,9 +7,9 @@ echo 'Mid-band, CNR, Tactical Broadband and Nato Narrowband Waveform'
 echo '1, 5 and 10% loss'
 echo 'Gilbert elliot Parameters: 1% 5% 10% 10%, 2% 10% 15% 15%, 4% 15% 15% 15%'
 
-echo '1 - Mid-Band-5G Network Test 100mbit/s 20ms delay 1% loss'
+echo '1 - Mid-Band-5G Network Test 100Mbit/s 20ms delay 1% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 1% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 100Mbit loss 1% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 1% 5% 10% 10%
@@ -21,9 +21,9 @@ echo 'Removing Loss'
 sudo tc qdisc del dev wlan0 root netem
 echo 'Completed'
 
-echo '2 - Mid-Band-5G Network Test 100mbit/s 20ms delay 1% loss'
+echo '2 - Mid-Band-5G Network Test 100Mbit/s 20ms delay 1% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 1% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 100Mbit loss 1% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 1% 5% 10% 10%
@@ -35,9 +35,9 @@ echo 'Removing Loss'
 sudo tc qdisc del dev wlan0 root netem
 echo 'Completed'
 
-echo '3 - Mid-Band-5G Network Test 100mbit/s 20ms delay 1% loss'
+echo '3 - Mid-Band-5G Network Test 100Mbit/s 20ms delay 1% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 1% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 100Mbit loss 1% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 1% 5% 10% 10%
@@ -49,9 +49,9 @@ echo 'Removing Loss'
 sudo tc qdisc del dev wlan0 root netem
 echo 'Completed'
 
-echo '4 - Mid-Band-5G Network Test 100mbit/s 20ms delay 1% loss'
+echo '4 - Mid-Band-5G Network Test 100Mbit/s 20ms delay 1% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 1% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 100Mbit loss 1% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 1% 5% 10% 10%
@@ -63,9 +63,9 @@ echo 'Removing Loss'
 sudo tc qdisc del dev wlan0 root netem
 echo 'Completed'
 
-echo '5 - Mid-Band-5G Network Test 100mbit/s 20ms delay 1% loss'
+echo '5 - Mid-Band-5G Network Test 100Mbit/s 20ms delay 1% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 1% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 100Mbit loss 1% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss 5gemodel 1% 5% 10% 10%
@@ -77,9 +77,9 @@ echo 'Removing Loss'
 sudo tc qdisc del dev wlan0 root netem
 echo 'Completed'
 
-echo '6 - Mid-Band-5G Network Test 100mbit/s 20ms delay 1% loss'
+echo '6 - Mid-Band-5G Network Test 100Mbit/s 20ms delay 1% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 1% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 100Mbit loss 1% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 1% 5% 10% 10%
@@ -91,9 +91,9 @@ echo 'Removing Loss'
 sudo tc qdisc del dev wlan0 root netem
 echo 'Completed'
 
-echo '7 - Mid-Band-5G Network Test 100mbit/s 20ms delay 1% loss'
+echo '7 - Mid-Band-5G Network Test 100Mbit/s 20ms delay 1% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 1% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 100Mbit loss 1% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 1% 5% 10% 10%
@@ -105,9 +105,9 @@ echo 'Removing Loss'
 sudo tc qdisc del dev wlan0 root netem
 echo 'Completed'
 
-echo '8 - Mid-Band-5G Network Test 100mbit/s 20ms delay 1% loss'
+echo '8 - Mid-Band-5G Network Test 100Mbit/s 20ms delay 1% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 1% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 100Mbit loss 1% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 1% 5% 10% 10%
@@ -119,9 +119,9 @@ echo 'Removing Loss'
 sudo tc qdisc del dev wlan0 root netem
 echo 'Completed'
 
-echo '9 - Mid-Band-5G Network Test 100mbit/s 20ms delay 1% loss'
+echo '9 - Mid-Band-5G Network Test 100Mbit/s 20ms delay 1% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 1% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 100Mbit loss 1% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 1% 5% 10% 10%
@@ -133,9 +133,9 @@ echo 'Removing Loss'
 sudo tc qdisc del dev wlan0 root netem
 echo 'Completed'
 
-echo '10 - Mid-Band-5G Network Test 100mbit/s 20ms delay 1% loss'
+echo '10 - Mid-Band-5G Network Test 100Mbit/s 20ms delay 1% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 1% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 100Mbit loss 1% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 1% 5% 10% 10%
@@ -147,9 +147,9 @@ echo 'Removing Loss'
 sudo tc qdisc del dev wlan0 root netem
 echo 'Completed'
 
-echo '1 - Mid-Band-5G Network Test 100mbit/s 20ms delay 5% loss'
+echo '1 - Mid-Band-5G Network Test 100Mbit/s 20ms delay 5% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 5% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 100Mbit loss 5% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 2% 10% 15% 15%
@@ -161,9 +161,9 @@ echo 'Removing Loss'
 sudo tc qdisc del dev wlan0 root netem
 echo 'Completed'
 
-echo '2 - Mid-Band-5G Network Test 100mbit/s 20ms delay 5% loss'
+echo '2 - Mid-Band-5G Network Test 100Mbit/s 20ms delay 5% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 5% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 100Mbit loss 5% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 2% 10% 15% 15%
@@ -175,9 +175,9 @@ echo 'Removing Loss'
 sudo tc qdisc del dev wlan0 root netem
 echo 'Completed'
 
-echo '3 - Mid-Band-5G Network Test 100mbit/s 20ms delay 5% loss'
+echo '3 - Mid-Band-5G Network Test 100Mbit/s 20ms delay 5% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 5% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 100Mbit loss 5% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 2% 10% 15% 15%
@@ -189,9 +189,9 @@ echo 'Removing Loss'
 sudo tc qdisc del dev wlan0 root netem
 echo 'Completed'
 
-echo '4 - Mid-Band-5G Network Test 100mbit/s 20ms delay 5% loss'
+echo '4 - Mid-Band-5G Network Test 100Mbit/s 20ms delay 5% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 5% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 100Mbit loss 5% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 2% 10% 15% 15%
@@ -203,9 +203,9 @@ echo 'Removing Loss'
 sudo tc qdisc del dev wlan0 root netem
 echo 'Completed'
 
-echo '5 - Mid-Band-5G Network Test 100mbit/s 20ms delay 5% loss'
+echo '5 - Mid-Band-5G Network Test 100Mbit/s 20ms delay 5% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 5% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 100Mbit loss 5% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 2% 10% 15% 15%
@@ -217,9 +217,9 @@ echo 'Removing Loss'
 sudo tc qdisc del dev wlan0 root netem
 echo 'Completed'
 
-echo '6 - Mid-Band-5G Network Test 100mbit/s 20ms delay 5% loss'
+echo '6 - Mid-Band-5G Network Test 100Mbit/s 20ms delay 5% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 5% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 100Mbit loss 5% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 2% 10% 15% 15%
@@ -231,9 +231,9 @@ echo 'Removing Loss'
 sudo tc qdisc del dev wlan0 root netem
 echo 'Completed'
 
-echo '7 - Mid-Band-5G Network Test 100mbit/s 20ms delay 5% loss'
+echo '7 - Mid-Band-5G Network Test 100Mbit/s 20ms delay 5% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 5% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 100Mbit loss 5% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 2% 10% 15% 15%
@@ -245,9 +245,9 @@ echo 'Removing Loss'
 sudo tc qdisc del dev wlan0 root netem
 echo 'Completed'
 
-echo '8 - Mid-Band-5G Network Test 100mbit/s 20ms delay 5% loss'
+echo '8 - Mid-Band-5G Network Test 100Mbit/s 20ms delay 5% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 5% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 100Mbit loss 5% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 2% 10% 15% 15%
@@ -259,9 +259,9 @@ echo 'Removing Loss'
 sudo tc qdisc del dev wlan0 root netem
 echo 'Completed'
 
-echo '9 - Mid-Band-5G Network Test 100mbit/s 20ms delay 5% loss'
+echo '9 - Mid-Band-5G Network Test 100Mbit/s 20ms delay 5% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 5% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 100Mbit loss 5% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 2% 10% 15% 15%
@@ -273,9 +273,9 @@ echo 'Removing Loss'
 sudo tc qdisc del dev wlan0 root netem
 echo 'Completed'
 
-echo '10 - Mid-Band-5G Network Test 100mbit/s 20ms delay 5% loss'
+echo '10 - Mid-Band-5G Network Test 100Mbit/s 20ms delay 5% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 5% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 100Mbit loss 5% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 2% 10% 15% 15%
@@ -287,9 +287,9 @@ echo 'Removing Loss'
 sudo tc qdisc del dev wlan0 root netem
 echo 'Completed'
 
-echo '1 - Mid-Band-5G Network Test 100mbit/s 20ms delay 10% loss'
+echo '1 - Mid-Band-5G Network Test 100Mbit/s 20ms delay 10% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 10% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 100Mbit loss 10% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 4% 15% 15% 15%
@@ -301,9 +301,9 @@ echo 'Removing Loss'
 sudo tc qdisc del dev wlan0 root netem
 echo 'Completed'
 
-echo '2 - Mid-Band-5G Network Test 100mbit/s 20ms delay 10% loss'
+echo '2 - Mid-Band-5G Network Test 100Mbit/s 20ms delay 10% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 10% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 100Mbit loss 10% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 4% 15% 15% 15%
@@ -315,9 +315,9 @@ echo 'Removing Loss'
 sudo tc qdisc del dev wlan0 root netem
 echo 'Completed'
 
-echo '3 - Mid-Band-5G Network Test 100mbit/s 20ms delay 10% loss'
+echo '3 - Mid-Band-5G Network Test 100Mbit/s 20ms delay 10% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 10% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 100Mbit loss 10% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 4% 15% 15% 15%
@@ -329,9 +329,9 @@ echo 'Removing Loss'
 sudo tc qdisc del dev wlan0 root netem
 echo 'Completed'
 
-echo '4 - Mid-Band-5G Network Test 100mbit/s 20ms delay 10% loss'
+echo '4 - Mid-Band-5G Network Test 100Mbit/s 20ms delay 10% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 10% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 100Mbit loss 10% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 4% 15% 15% 15%
@@ -343,9 +343,9 @@ echo 'Removing Loss'
 sudo tc qdisc del dev wlan0 root netem
 echo 'Completed'
 
-echo '5 - Mid-Band-5G Network Test 100mbit/s 20ms delay 10% loss'
+echo '5 - Mid-Band-5G Network Test 100Mbit/s 20ms delay 10% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 10% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 100Mbit loss 10% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 4% 15% 15% 15%
@@ -357,9 +357,9 @@ echo 'Removing Loss'
 sudo tc qdisc del dev wlan0 root netem
 echo 'Completed'
 
-echo '6 - Mid-Band-5G Network Test 100mbit/s 20ms delay 10% loss'
+echo '6 - Mid-Band-5G Network Test 100Mbit/s 20ms delay 10% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 10% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 100Mbit loss 10% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 4% 15% 15% 15%
@@ -371,9 +371,9 @@ echo 'Removing Loss'
 sudo tc qdisc del dev wlan0 root netem
 echo 'Completed'
 
-echo '7 - Mid-Band-5G Network Test 100mbit/s 20ms delay 10% loss'
+echo '7 - Mid-Band-5G Network Test 100Mbit/s 20ms delay 10% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 10% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 100Mbit loss 10% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 4% 15% 15% 15%
@@ -385,9 +385,9 @@ echo 'Removing Loss'
 sudo tc qdisc del dev wlan0 root netem
 echo 'Completed'
 
-echo '8 - Mid-Band-5G Network Test 100mbit/s 20ms delay 10% loss'
+echo '8 - Mid-Band-5G Network Test 100Mbit/s 20ms delay 10% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 10% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 100Mbit loss 10% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 4% 15% 15% 15%
@@ -399,9 +399,9 @@ echo 'Removing Loss'
 sudo tc qdisc del dev wlan0 root netem
 echo 'Completed'
 
-echo '9 - Mid-Band-5G Network Test 100mbit/s 20ms delay 10% loss'
+echo '9 - Mid-Band-5G Network Test 100Mbit/s 20ms delay 10% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 10% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 100Mbit loss 10% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 4% 15% 15% 15%
@@ -413,9 +413,9 @@ echo 'Removing Loss'
 sudo tc qdisc del dev wlan0 root netem
 echo 'Completed'
 
-echo '10 - Mid-Band-5G Network Test 100mbit/s 20ms delay 10% loss'
+echo '10 - Mid-Band-5G Network Test 100Mbit/s 20ms delay 10% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 10% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 100Mbit loss 10% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 4% 15% 15% 15%
@@ -431,7 +431,7 @@ echo 'Finished Mid-Band Tests'
 
 echo '1 - CNR Network Test 9.6kbit/s 20ms delay 1% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 1% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 9.6kbit loss 1% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 1% 5% 10% 10%
@@ -445,7 +445,7 @@ echo 'Completed'
 
 echo '2 - CNR Network Test 9.6kbit/s 20ms delay 1% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 1% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 9.6kbit loss 1% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 1% 5% 10% 10%
@@ -459,7 +459,7 @@ echo 'Completed'
 
 echo '3 - CNR Network Test 9.6kbit/s 20ms delay 1% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 1% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 9.6kbit loss 1% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 1% 5% 10% 10%
@@ -473,7 +473,7 @@ echo 'Completed'
 
 echo '4 - CNR Network Test 9.6kbit/s 20ms delay 1% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 1% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 9.6kbit loss 1% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 1% 5% 10% 10%
@@ -487,7 +487,7 @@ echo 'Completed'
 
 echo '5 - CNR Network Test 9.6kbit/s 20ms delay 1% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 1% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 9.6kbit loss 1% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 1% 5% 10% 10%
@@ -501,7 +501,7 @@ echo 'Completed'
 
 echo '6 - CNR Network Test 9.6kbit/s 20ms delay 1% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 1% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 9.6kbit loss 1% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 1% 5% 10% 10%
@@ -515,7 +515,7 @@ echo 'Completed'
 
 echo '7 - CNR Network Test 9.6kbit/s 20ms delay 1% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 1% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 9.6kbit loss 1% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 1% 5% 10% 10%
@@ -529,7 +529,7 @@ echo 'Completed'
 
 echo '8 - CNR Network Test 9.6kbit/s 20ms delay 1% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 1% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 9.6kbit loss 1% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 1% 5% 10% 10%
@@ -543,7 +543,7 @@ echo 'Completed'
 
 echo '9 - CNR Network Test 9.6kbit/s 20ms delay 1% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 1% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 9.6kbit loss 1% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 1% 5% 10% 10%
@@ -557,7 +557,7 @@ echo 'Completed'
 
 echo '10 - CNR Network Test 9.6kbit/s 20ms delay 1% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 1% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 9.6kbit loss 1% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 1% 5% 10% 10%
@@ -571,7 +571,7 @@ echo 'Completed'
 
 echo '1 - CNR Network Test 9.6kbit/s 20ms delay 5% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 5% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 9.6kbit loss 5% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 2% 10% 15% 15%
@@ -585,7 +585,7 @@ echo 'Completed'
 
 echo '2 - CNR Network Test 9.6kbit/s 20ms delay 5% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 5% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 9.6kbit loss 5% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 2% 10% 15% 15%
@@ -599,7 +599,7 @@ echo 'Completed'
 
 echo '3 - CNR Network Test 9.6kbit/s 20ms delay 5% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 5% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 9.6kbit loss 5% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 2% 10% 15% 15%
@@ -613,7 +613,7 @@ echo 'Completed'
 
 echo '4 - CNR Network Test 9.6kbit/s 20ms delay 5% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 5% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 9.6kbit loss 5% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 2% 10% 15% 15%
@@ -627,7 +627,7 @@ echo 'Completed'
 
 echo '5 - CNR Network Test 9.6kbit/s 20ms delay 5% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 5% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 9.6kbit loss 5% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 2% 10% 15% 15%
@@ -641,7 +641,7 @@ echo 'Completed'
 
 echo '6 - CNR Network Test 9.6kbit/s 20ms delay 5% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 5% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 9.6kbit loss 5% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 2% 10% 15% 15%
@@ -655,7 +655,7 @@ echo 'Completed'
 
 echo '7 - CNR Network Test 9.6kbit/s 20ms delay 5% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 5% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 9.6kbit loss 5% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 2% 10% 15% 15%
@@ -669,7 +669,7 @@ echo 'Completed'
 
 echo '8 - CNR Network Test 9.6kbit/s 20ms delay 5% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 5% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 9.6kbit loss 5% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 2% 10% 15% 15%
@@ -683,7 +683,7 @@ echo 'Completed'
 
 echo '9 - CNR Network Test 9.6kbit/s 20ms delay 5% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 5% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 9.6kbit loss 5% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 2% 10% 15% 15%
@@ -697,7 +697,7 @@ echo 'Completed'
 
 echo '10 - CNR Network Test 9.6kbit/s 20ms delay 5% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 5% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 9.6kbit loss 5% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 2% 10% 15% 15%
@@ -711,7 +711,7 @@ echo 'Completed'
 
 echo '1 - CNR Network Test 9.6kbit/s 20ms delay 10% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 10% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 9.6kbit loss 10% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 4% 15% 15% 15%
@@ -725,7 +725,7 @@ echo 'Completed'
 
 echo '2 - CNR Network Test 9.6kbit/s 20ms delay 10% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 10% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 9.6kbit loss 10% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 4% 15% 15% 15%
@@ -739,7 +739,7 @@ echo 'Completed'
 
 echo '3 - CNR Network Test 9.6kbit/s 20ms delay 10% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 10% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 9.6kbit loss 10% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 4% 15% 15% 15%
@@ -753,7 +753,7 @@ echo 'Completed'
 
 echo '4 - CNR Network Test 9.6kbit/s 20ms delay 10% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 10% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 9.6kbit loss 10% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 4% 15% 15% 15%
@@ -767,7 +767,7 @@ echo 'Completed'
 
 echo '5 - CNR Network Test 9.6kbit/s 20ms delay 10% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 10% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 9.6kbit loss 10% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 4% 15% 15% 15%
@@ -781,7 +781,7 @@ echo 'Completed'
 
 echo '6 - CNR Network Test 9.6kbit/s 20ms delay 10% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 10% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 9.6kbit loss 10% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 4% 15% 15% 15%
@@ -795,7 +795,7 @@ echo 'Completed'
 
 echo '7 - CNR Network Test 9.6kbit/s 20ms delay 10% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 10% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 9.6kbit loss 10% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 4% 15% 15% 15%
@@ -809,7 +809,7 @@ echo 'Completed'
 
 echo '8 - CNR Network Test 9.6kbit/s 20ms delay 10% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 10% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 9.6kbit loss 10% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 4% 15% 15% 15%
@@ -823,7 +823,7 @@ echo 'Completed'
 
 echo '9 - CNR Network Test 9.6kbit/s 20ms delay 10% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 10% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 9.6kbit loss 10% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 4% 15% 15% 15%
@@ -837,7 +837,7 @@ echo 'Completed'
 
 echo '10 - CNR Network Test 9.6kbit/s 20ms delay 10% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 100mbit loss 10% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 9.6kbit loss 10% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 4% 15% 15% 15%
@@ -1275,7 +1275,7 @@ echo 'Finished NATO Narrowband'
 
 echo '1 - Tactical Broadband Network Test 2mbit/s 20ms delay 1% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 2mbit loss 1% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 2Mbit loss 1% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 1% 5% 10% 10%
@@ -1289,7 +1289,7 @@ echo 'Completed'
 
 echo '2 - Tactical Broadband Network Test 2mbit/s 20ms delay 1% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 2mbit loss 1% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 2Mbit loss 1% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 1% 5% 10% 10%
@@ -1303,7 +1303,7 @@ echo 'Completed'
 
 echo '3 - Tactical Broadband Network Test 2mbit/s 20ms delay 1% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 2mbit loss 1% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 2Mbit loss 1% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 1% 5% 10% 10%
@@ -1317,7 +1317,7 @@ echo 'Completed'
 
 echo '4 - Tactical Broadband Network Test 2mbit/s 20ms delay 1% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 2mbit loss 1% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 2Mbit loss 1% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 1% 5% 10% 10%
@@ -1331,7 +1331,7 @@ echo 'Completed'
 
 echo '5 - Tactical Broadband Network Test 2mbit/s 20ms delay 1% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 2mbit loss 1% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 2Mbit loss 1% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 1% 5% 10% 10%
@@ -1345,7 +1345,7 @@ echo 'Completed'
 
 echo '6 - Tactical Broadband Network Test 2mbit/s 20ms delay 1% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 2mbit loss 1% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 2Mbit loss 1% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 1% 5% 10% 10%
@@ -1359,7 +1359,7 @@ echo 'Completed'
 
 echo '7 - Tactical Broadband Network Test 2mbit/s 20ms delay 1% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 2mbit loss 1% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 2Mbit loss 1% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 1% 5% 10% 10%
@@ -1373,7 +1373,7 @@ echo 'Completed'
 
 echo '8 - Tactical Broadband Network Test 2mbit/s 20ms delay 1% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 2mbit loss 1% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 2Mbit loss 1% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 1% 5% 10% 10%
@@ -1387,7 +1387,7 @@ echo 'Completed'
 
 echo '9 - Tactical Broadband Network Test 2mbit/s 20ms delay 1% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 2mbit loss 1% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 2Mbit loss 1% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 1% 5% 10% 10%
@@ -1401,7 +1401,7 @@ echo 'Completed'
 
 echo '10 - Tactical Broadband Network Test 2mbit/s 20ms delay 1% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 2mbit loss 1% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 2Mbit loss 1% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 1% 5% 10% 10%
@@ -1415,7 +1415,7 @@ echo 'Completed'
 
 echo '1 - Tactical Broadband Network Test 2mbit/s 20ms delay 5% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 2mbit loss 5% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 2Mbit loss 5% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 2% 10% 15% 15%
@@ -1429,7 +1429,7 @@ echo 'Completed'
 
 echo '2 - Tactical Broadband Network Test 2mbit/s 20ms delay 5% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 2mbit loss 5% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 2Mbit loss 5% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 2% 10% 15% 15%
@@ -1443,7 +1443,7 @@ echo 'Completed'
 
 echo '3 - Tactical Broadband Network Test 2mbit/s 20ms delay 5% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 2mbit loss 5% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 2Mbit loss 5% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 2% 10% 15% 15%
@@ -1457,7 +1457,7 @@ echo 'Completed'
 
 echo '4 - Tactical Broadband Network Test 2mbit/s 20ms delay 5% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 2mbit loss 5% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 2Mbit loss 5% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 2% 10% 15% 15%
@@ -1471,7 +1471,7 @@ echo 'Completed'
 
 echo '5 - Tactical Broadband Network Test 2mbit/s 20ms delay 5% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 2mbit loss 5% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 2Mbit loss 5% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 2% 10% 15% 15%
@@ -1485,7 +1485,7 @@ echo 'Completed'
 
 echo '6 - Tactical Broadband Network Test 2mbit/s 20ms delay 5% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 2mbit loss 5% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 2Mbit loss 5% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 2% 10% 15% 15%
@@ -1499,7 +1499,7 @@ echo 'Completed'
 
 echo '7 - Tactical Broadband Network Test 2mbit/s 20ms delay 5% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 2mbit loss 5% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 2Mbit loss 5% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 2% 10% 15% 15%
@@ -1513,7 +1513,7 @@ echo 'Completed'
 
 echo '8 - Tactical Broadband Network Test 2mbit/s 20ms delay 5% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 2mbit loss 5% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 2Mbit loss 5% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 2% 10% 15% 15%
@@ -1527,7 +1527,7 @@ echo 'Completed'
 
 echo '9 - Tactical Broadband Network Test 2mbit/s 20ms delay 5% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 2mbit loss 5% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 2Mbit loss 5% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 2% 10% 15% 15%
@@ -1541,7 +1541,7 @@ echo 'Completed'
 
 echo '10 - Tactical Broadband Network Test 2mbit/s 20ms delay 5% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 2mbit loss 5% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 2Mbit loss 5% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 2% 10% 15% 15%
@@ -1555,7 +1555,7 @@ echo 'Completed'
 
 echo '1 - Tactical Broadband Network Test 2mbit/s 20ms delay 10% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 2mbit loss 10% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 2Mbit loss 10% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 4% 15% 15% 15%
@@ -1569,7 +1569,7 @@ echo 'Completed'
 
 echo '2 - Tactical Broadband Network Test 2mbit/s 20ms delay 10% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 2mbit loss 10% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 2Mbit loss 10% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 4% 15% 15% 15%
@@ -1583,7 +1583,7 @@ echo 'Completed'
 
 echo '3 - Tactical Broadband Network Test 2mbit/s 20ms delay 10% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 2mbit loss 10% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 2Mbit loss 10% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 4% 15% 15% 15%
@@ -1597,7 +1597,7 @@ echo 'Completed'
 
 echo '4 - Tactical Broadband Network Test 2mbit/s 20ms delay 10% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 2mbit loss 10% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 2Mbit loss 10% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 4% 15% 15% 15%
@@ -1611,7 +1611,7 @@ echo 'Completed'
 
 echo '5 - Tactical Broadband Network Test 2mbit/s 20ms delay 10% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 2mbit loss 10% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 2Mbit loss 10% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 4% 15% 15% 15%
@@ -1625,7 +1625,7 @@ echo 'Completed'
 
 echo '6 - Tactical Broadband Network Test 2mbit/s 20ms delay 10% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 2mbit loss 10% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 2Mbit loss 10% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 4% 15% 15% 15%
@@ -1639,7 +1639,7 @@ echo 'Completed'
 
 echo '7 - Tactical Broadband Network Test 2mbit/s 20ms delay 10% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 2mbit loss 10% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 2Mbit loss 10% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 4% 15% 15% 15%
@@ -1653,7 +1653,7 @@ echo 'Completed'
 
 echo '8 - Tactical Broadband Network Test 2mbit/s 20ms delay 10% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 2mbit loss 10% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 2Mbit loss 10% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 4% 15% 15% 15%
@@ -1667,7 +1667,7 @@ echo 'Completed'
 
 echo '9 - Tactical Broadband Network Test 2mbit/s 20ms delay 10% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 2mbit loss 10% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 2Mbit loss 10% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 4% 15% 15% 15%
@@ -1681,7 +1681,7 @@ echo 'Completed'
 
 echo '10 - Tactical Broadband Network Test 2mbit/s 20ms delay 10% loss'
 echo 'Adding Network Emulation'
-sudo tc qdisc add dev wlan0 root netem rate 2mbit loss 10% delay 20ms
+sudo tc qdisc add dev wlan0 root netem rate 2Mbit loss 10% delay 20ms
 echo 'Finished adding network emulation'
 echo 'adding Gilbert Elliott - 10000 packets'
 sudo tc qdisc add dev wlan0 root netem loss gemodel 4% 15% 15% 15%
