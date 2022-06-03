@@ -1,13 +1,6 @@
-# Master Assignment
+# Edge computing for Disaster Relief Operations
+
+Final master thesis for a master in Programming and System Architecture at UiO
 
 by Nicolai Vatne
 ---
-
-
-### Nifty commands
-
-Stop/Pause a Deployment
----
-```bash
-kubectl scale --replicas=0 deployment/<your-deployment>
-```
